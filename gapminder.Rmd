@@ -1,0 +1,18 @@
+---
+title: "gapminder"
+output: html_document
+date: "2026-08-11"
+---
+
+```{r}
+
+pacman::p_load(tidyverse)
+
+```
+
+```{r}
+
+gapminder <- read.csv('https://raw.githubusercontent.com/carpentries-incubator/open-science-with-r/gh-pages/data/gapminder.csv')
+
+```
+
