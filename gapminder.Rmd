@@ -16,3 +16,17 @@ gapminder <- read.csv('https://raw.githubusercontent.com/carpentries-incubator/o
 
 ```
 
+```{r}
+
+chn_gdp <- gapminder %>% 
+  filter(country == "China")
+
+
+ggplot(chn_gdp,
+       aes(x = year,
+           y = gdpPercap)) +
+  
+  geom_point()
+
+```
+
